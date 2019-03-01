@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.alex.worldpay3.MainActivity">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" android:layout_marginTop="25dp" android:id="@+id/textView"/>
+    <Button
+            android:text="Talk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" android:layout_marginBottom="46dp" android:id="@+id/button"/>
+    <Button
+            android:text="Button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:layout_marginTop="25dp" android:layout_below="@+id/textView" android:layout_toLeftOf="@+id/button"
+            android:layout_toStartOf="@+id/button"/>
+    <Button
+            android:text="Button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignBottom="@+id/button1"
+            android:layout_toRightOf="@+id/button" android:layout_toEndOf="@+id/button" android:id="@+id/button2"/>
+    <Button
+            android:text="Button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_below="@+id/button1" android:layout_alignLeft="@+id/button1"
+            android:layout_alignStart="@+id/button1"/>
+    <Button
+            android:text="Button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button4"
+            android:layout_below="@+id/button2" android:layout_alignLeft="@+id/button2"
+            android:layout_alignStart="@+id/button2"/>
+
+</RelativeLayout>
